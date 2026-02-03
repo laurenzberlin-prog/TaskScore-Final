@@ -1,0 +1,15 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Database (lokale Daten)
+taskscore.db
+
+# Betriebssystem
+.DS_Store
+
+# Environment / Secrets
+.env
