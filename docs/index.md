@@ -1,7 +1,3 @@
----
-title: TaskScore – Dokumentation
----
-
 # TaskScore – Dokumentation
 
 Diese Seite dient als zentrale Übersicht der Projektdokumentation von **TaskScore**.  
