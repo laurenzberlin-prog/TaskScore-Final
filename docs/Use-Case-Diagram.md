@@ -1,26 +1,22 @@
-# Use Case Model – TaskScore
+# Data Model & Use Case Diagramme – TaskScore
 
-```mermaid
-flowchart LR
+Diese Seite dokumentiert die fachlichen Abläufe und das Datenmodell der Anwendung
+TaskScore anhand von Diagrammen.
 
-User((User))
+---
 
-Login[Login]
-Register[Register]
-AddTask[Create Task]
-DeleteTask[Delete Task]
-ViewTasks[View Tasks]
-ToggleTask[Mark Task as Done]
-ViewPlan[View Weekly Plan]
-ViewProgress[View Progress]
-Logout[Logout]
+## 1. Use Case Model
 
-User --> Login
-User --> Register
-User --> AddTask
-User --> DeleteTask
-User --> ViewTasks
-User --> ToggleTask
-User --> ViewPlan
-User --> ViewProgress
-User --> Logout
+Das Use Case Model zeigt die Interaktion zwischen Nutzer und System sowie
+die zentralen Funktionen der Anwendung.
+
+![Use Case Model](screenshots/UseCaseModel.png)
+
+---
+
+## 2. Use Case Flow
+
+Der Use Case Flow beschreibt den typischen Ablauf der Nutzung der Anwendung
+vom Login bis zur Fortschrittsauswertung.
+
+![Use Case Flow](screenshots/UseCaseFlow.png)
