@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>TaskScore – Fortschritt</title>
+  <style>
+    body{
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;margin:0;padding:0;background:#f4f5f7}
+    header{
+      background:#1f2933;color:#fff;padding:16px 24px}
+    header h1{
+      margin:0;font-size:1.6rem}
+    main{
+      max-width:900px;margin:24px auto;padding:0 16px 32px}
+    .card{
+      background:hsl(173,35%,82%);border-radius:12px;padding:20px 24px;box-shadow:0 2px 6px rgba(0,0,0,.08);margin:0 0 16px}
+    .nav a{
+      display:inline-block;margin-right:5px;text-decoration:none;color:#2c64d5;font-weight:500;padding:8px 14px;border:2px solid #000;border-radius:10px;transition:.2s;background:#fff}
+    .nav a:hover{
+      background:#2563eb;color:#fff}
+    .muted{
+      color:#6b7280;font-size:.92rem}
+    .kpis{
+      display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:12px}
+    .kpi{
+      border:1px solid #e5e7eb;border-radius:12px;padding:12px 14px;background:#fff}
+    .kpi .label{
+      font-size:.85rem;color:#6b7280}
+    .kpi .value{
+      font-size:1.2rem;font-weight:700;margin-top:4px}
+    .progress-wrap{
+      margin-top:12px}
+    .progress-bar{
+      height:14px;background:#e5e7eb;border-radius:999px;overflow:hidden}
+    .progress-bar>div{
+      height:100%;background:#22c55e}
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>TaskScore – Fortschritt</h1>
+  </header>
+
+  <main>
+    <section class="card nav">
+      <h2>Navigation 🧭</h2>
+      <a href="/">Hauptmenü</a>
+      <a href="/tasks">Aufgaben verwalten</a>
+      <a href="/plan">Wochenplan ansehen</a>
+    </section>
+
+    <section class="card">
+      <h2>Fortschritt dieser Woche</h2>
+      <p class="muted">Hier siehst du deinen aktuellen Fortschritt, bezogen auf deine Aufgaben mit der jeweiligen Punkteverteilung.</p>
+
+      {% set percent = 0 %}
+      {% if total_points and total_points > 0 %}
+        {% set percent = (done_points / total_points * 100) %}
+      {% endif %}
+
+      <div class="kpis">
+        <div class="kpi">
+          <div class="label">Wochenbudget</div>
+          <div class="value">{{ total_points }}💰</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Erledigte Punkte</div>
+          <div class="value">{{ done_points }}✅</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Fortschritt</div>
+          <div class="value">{{ percent|round(0) }}% 🚀</div>
+        </div>
+      </div>
+
+      <div class="progress-wrap">
+        <p class="muted">{{ done_points }} / {{ total_points }} Punkte</p>
+        <div class="progress-bar">
+          <div style="width: {{ percent }}%;"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

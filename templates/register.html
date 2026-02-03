@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>TaskScore – Registrierung</title>
+  <style>
+    body{
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;margin:0;background:#f4f5f7}
+    header{
+      background:#1f2933;color:#fff;padding:16px 24px}
+    main{
+      max-width:1400px;margin:28px auto;padding:0 16px}
+    .card{
+      background:hsl(173,35%,82%);border-radius:12px;padding:20px 24px;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+    label{
+      display:block;font-size:.9rem;margin-top:10px}
+    input{
+      width:100%;box-sizing:border-box;padding:10px;border-radius:10px;border:1px solid #d1d5db;margin-top:6px;font-size:.95rem}
+    .nav a,.nav button{
+      display:inline-block;margin-right:5px;text-decoration:none;color:#2c64d5;font-weight:500;padding:8px 14px;border:2px solid #000;border-radius:10px;background:#fff;cursor:pointer;transition:.2s;font-family:inherit;font-size:.95rem;line-height:1.2}
+    .nav a:hover,.nav button:hover{
+      background:#2563eb;color:#fff}
+    .muted{
+      color:#000;font-size:.9rem;margin-top:12px}
+    .alert{
+      margin-bottom:12px;padding:10px 14px;background:#fee2e2;color:#991b1b;border-radius:10px;font-size:.9rem}
+  </style>
+</head>
+<body>
+  <header><h1 style="margin:0;font-size:1.4rem">TaskScore – Registrierung</h1></header>
+
+  <main>
+    <section class="card">
+      <h2 style="margin:0 0 8px">Konto erstellen</h2>
+      <p class="muted">Lege einen Benutzer an, um TaskScore zu nutzen.</p>
+
+      {% if error %}
+        <div class="alert">{{ error }}</div>
+      {% endif %}
+
+      <form method="post" action="/register">
+        <label>Benutzername</label>
+        <input name="username" autocomplete="username" required>
+
+        <label>Passwort</label>
+        <input type="password" name="password" autocomplete="new-password" required>
+
+        <div class="nav" style="margin-top:18px">
+          <button type="submit">Registrieren</button>
+          <a href="/login">Zum Login</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>TaskScore – Wochenplan</title>
+  <style>
+    body{
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;margin:0;padding:0;background:#f4f5f7}
+    header{
+      background:#1f2933;color:#fff;padding:16px 24px}
+    header h1{
+      margin:0;font-size:1.6rem}
+    main{
+      max-width:900px;margin:24px auto;padding:0 16px 32px}
+    .card{
+      background:hsl(173,35%,82%);border-radius:12px;padding:20px 24px;box-shadow:0 2px 6px rgba(0,0,0,.08);margin:0 0 16px}
+    .nav a{
+      display:inline-block;margin-right:5px;text-decoration:none;color:#2c64d5;font-weight:500;padding:8px 14px;border:2px solid #000;border-radius:10px;transition:.2s;background:#fff}
+    .nav a:hover{
+      background:#2563eb;color:#fff}
+    .muted{
+      color:#6b7280;font-size:.92rem}
+    table{
+      width:100%;border-collapse:collapse;margin-top:8px}
+    th,td{
+      text-align:left;padding:10px 8px;border-bottom:1px solid #e5e7eb;vertical-align:middle}
+    th{
+      font-size:.85rem;color:#374151}
+    .bar{
+      height:10px;background:#e5e7eb;border-radius:999px;overflow:hidden}
+    .bar>div{
+      height:100%;background:#2563eb}
+    .badge{
+      display:inline-block;padding:3px 10px;border-radius:999px;background:#e5edff;color:#1e3a8a;font-size:.8rem}
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>TaskScore – Wochenplan</h1>
+  </header>
+
+  <main>
+    <section class="card nav">
+      <h2>Navigation 🧭</h2>
+      <a href="/">Hauptmenü</a>
+      <a href="/tasks">Aufgaben verwalten</a>
+      <a href="/progress">Fortschritt anzeigen</a>
+    </section>
+
+    <section class="card">
+      <h2>Punkte-Verteilung pro Wochentag</h2>
+      <p class="muted">Übersicht der eingeplanten Punkte pro Wochentag.</p>
+
+      <p><span class="badge">Wochenbudget: 100 Punkte</span></p>
+
+      <table>
+        <thead>
+          <tr><th>Tag</th><th>Punkte</th><th>Visualisierung</th></tr>
+        </thead>
+        <tbody>
+          {% for day, points in weekly_points.items() %}
+          <tr>
+            <td><strong>{{ day }}</strong></td>
+            <td>{{ points }}</td>
+            <td><div class="bar"><div style="width: {{ points }}%;"></div></div></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
