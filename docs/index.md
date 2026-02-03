@@ -34,3 +34,9 @@ Bitte die Inhalte in der vorgesehenen Reihenfolge durchgehen.
 
 8. **UI Overview & Implementation**  
    - [UI Overview & Implementation](ui-overview-and-implementation.html)
+
+9. **Goals Achieved & Missed**  
+   - [Goals Achieved & Missed](goals-achieved-and-missed.html)
+
+10. **Individual Contributions**  
+   - [Individual Contributions](individual-contributions.html)
