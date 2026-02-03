@@ -1,8 +1,7 @@
-# TaskScore – Dokumentation (Final)
+# TaskScore – Dokumentation
 
-TaskScore ist eine webbasierte Task-Management-Anwendung zur Wochenplanung.  
-Aufgaben werden auf Wochentage verteilt und über ein Punktesystem geplant, um Prioritäten und Zeitaufwand nachvollziehbar zu machen.  
-Ein Done-Score dient als Belohnungssystem für erledigte Aufgaben.
+Diese Seite dient als zentrale Übersicht der Projektdokumentation von **TaskScore**.  
+Bitte die Inhalte in der vorgesehenen Reihenfolge durchgehen.
 
 ---
 
@@ -28,7 +27,7 @@ Bitte die Dokumentation in der folgenden Reihenfolge nutzen:
 <summary><strong>3) Data Model</strong></summary>
 
 - [Data Model / Diagramme](Use-Case-Diagram.md)  
-  (UseCaseModel & UseCaseFlow)
+  (Use Case Model & Use Case Flow)
 
 </details>
 
@@ -66,10 +65,3 @@ Bitte die Dokumentation in der folgenden Reihenfolge nutzen:
 - [UI Overview & Implementation](ui-overview-and-implementation.md)
 
 </details>
-
----
-
-## Hinweise
-
-- Die Markdown-Dateien der Dokumentation liegen vollständig im Ordner `docs/`.
-- Der Quellcode der Anwendung befindet sich im Repository (Root: `app.py`, `database.py`, `templates/`).
