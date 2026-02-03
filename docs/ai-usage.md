@@ -1,7 +1,7 @@
 # AI-Usage / KI-Nutzung (TaskScore)
 
 ## Verwendete KI-Tools
-- ChatGPT (OpenAI) wurde zur Unterstützung beim Verständnis von Flask/Jinja, beim Debugging sowie zum Erstellen der Dokumentationsstruktur und bei Formulierungen für Dokumentationstexte verwendet. Des Weiteren wurden Tools zur reinen Code-Completion verwendet.
+- ChatGPT (OpenAI) wurde zur Unterstützung beim Verständnis von Flask/Jinja, beim Debugging sowie zum Erstellen der Dokumentationsstruktur, GitHub Pages und bei Formulierungen für Dokumentationstexte verwendet. Des Weiteren wurden Tools zur reinen Code-Completion verwendet.
 
 ## Art und Umfang der Nutzung
 Die KI wurde unterstützend eingesetzt für:
