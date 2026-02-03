@@ -1,35 +1,36 @@
+---
+title: TaskScore – Dokumentation
+---
+
 # TaskScore – Dokumentation
 
 Diese Seite dient als zentrale Übersicht der Projektdokumentation von **TaskScore**.  
 Bitte die Inhalte in der vorgesehenen Reihenfolge durchgehen.
 
-**Hinweis:**  
-Die Links führen zur **GitHub Pages**-Version der Dokumentation (online gerendert).
-
 ---
 
-## Navigation
+## Navigation (in Reihenfolge)
 
-### 1) Value Proposition
-- ✅ https://laurenzberlin-prog.github.io/TaskScore-Final/value-proposition.html
+1. **Value Proposition**  
+   - [Value Proposition](value-proposition.html)
 
-### 2) Architecture
-- ✅ https://laurenzberlin-prog.github.io/TaskScore-Final/architecture.html
+2. **Architecture**  
+   - [Architecture](architecture.html)
 
-### 3) Data Model / Diagramme
-- ✅ https://laurenzberlin-prog.github.io/TaskScore-Final/Use-Case-Diagram.html
+3. **Data Model / Diagramme**  
+   - [Data Model / Diagramme](Use-Case-Diagram.html)
 
-### 4) Sources
-- ✅ https://laurenzberlin-prog.github.io/TaskScore-Final/sources.html
+4. **Sources**  
+   - [Sources](sources.html)
 
-### 5) Design Decisions
-- ✅ https://laurenzberlin-prog.github.io/TaskScore-Final/design-decisions.html
+5. **Design Decisions**  
+   - [Design Decisions](design-decisions.html)
 
-### 6) AI Usage
-- ✅ https://laurenzberlin-prog.github.io/TaskScore-Final/ai-usage.html
+6. **AI Usage**  
+   - [AI Usage](ai-usage.html)
 
-### 7) Declaration
-- ✅ https://laurenzberlin-prog.github.io/TaskScore-Final/declaration.html
+7. **Declaration**  
+   - [Declaration](declaration.html)
 
-### 8) UI Overview & Implementation
-- ✅ https://laurenzberlin-prog.github.io/TaskScore-Final/ui-overview-and-implementation.html
+8. **UI Overview & Implementation**  
+   - [UI Overview & Implementation](ui-overview-and-implementation.html)
