@@ -4,7 +4,7 @@ title: TaskScore – Dokumentation
 
 # TaskScore – Dokumentation
 
-Diese Seite dient als zentrale Übersicht der Projektdokumentation von **TaskScore**.  
+Diese Seite dient als  Übersicht der Projektdokumentation von **TaskScore**.  
 Bitte die Inhalte in der vorgesehenen Reihenfolge durchgehen.
 
 ---
