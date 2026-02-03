@@ -91,13 +91,13 @@
       {% endif %}
 
       <form method="post" action="/tasks">
-        <label>Titel ⚒️</label>
+        <label><strong>Titel ⚒️</strong></label>
         <input name="title" required>
 
-        <label>Beschreibung ✒️</label>
+        <label><strong>Beschreibung ✒️</strong></label>
         <textarea name="description"></textarea>
 
-        <label>Wochentage 🗓️</label>
+        <label><strong>Wochentage 🗓️</strong></label>
         <details class="weekday-details">
           <summary class="weekday-summary">Tage auswählen…</summary>
           <div class="weekday-box">
@@ -113,7 +113,7 @@
           </div>
         </details>
 
-        <label>Punkte💰</label>
+        <label><strong>Punkte💰</strong></label>
         <input type="number" name="points_total" value="0" min="0">
 
         <button type="submit">Aufgabe hinzufügen</button>

@@ -34,6 +34,8 @@
       height:14px;background:#e5e7eb;border-radius:999px;overflow:hidden}
     .progress-bar>div{
       height:100%;background:#22c55e}
+    .meta{
+      color:#000;font-size:.9rem}
   </style>
 </head>
 
@@ -52,7 +54,7 @@
 
     <section class="card">
       <h2>Fortschritt dieser Woche</h2>
-      <p class="muted">Hier siehst du deinen aktuellen Fortschritt, bezogen auf deine Aufgaben mit der jeweiligen Punkteverteilung.</p>
+      <p class="meta">Hier siehst du deinen aktuellen Fortschritt, bezogen auf deine Aufgaben mit der jeweiligen Punkteverteilung.</p>
 
       {% set percent = 0 %}
       {% if total_points and total_points > 0 %}
