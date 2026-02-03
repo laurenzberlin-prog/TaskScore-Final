@@ -11,17 +11,17 @@ Bitte die Inhalte in der vorgesehenen Reihenfolge durchgehen.
 
 ## Navigation (in Reihenfolge)
 
-1. **Value Proposition**  
+1. **Project Description**  
+   - [Project Description](project-description.html)
+  
+2. **Value Proposition**  
    - [Value Proposition](value-proposition.html)
 
-2. **Architecture**  
+3. **Architecture**  
    - [Architecture](architecture.html)
 
-3. **Data Model / Diagramme**  
+4. **Data Model / Diagramme**  
    - [Data Model / Diagramme](Use-Case-Diagram.html)
-
-4. **Sources**  
-   - [Sources](sources.html)
 
 5. **Design Decisions**  
    - [Design Decisions](design-decisions.html)
@@ -40,3 +40,6 @@ Bitte die Inhalte in der vorgesehenen Reihenfolge durchgehen.
 
 10. **Individual Contributions**  
    - [Individual Contributions](individual-contributions.html)
+
+11. **Sources**  
+   - [Sources](sources.html)
