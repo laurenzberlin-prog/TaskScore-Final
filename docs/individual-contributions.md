@@ -14,3 +14,5 @@
 - Gestaltung der Benutzeroberfläche (HTML / CSS) 
 - Inhaltlichen Ausarbeitung der Dokumentation  
 - Erstellung und Pflege von Präsentationsmaterialien
+- Pflege der GitHub-Pages-Dokumentation
+- Letzter HTML/CSS Feinschliff
