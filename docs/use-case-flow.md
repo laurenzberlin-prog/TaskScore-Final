@@ -1,5 +1,9 @@
 # Use Case Flow – TaskScore
 
+## Use Case Flow – Übersicht
+
+![Use Case Flow](screenshots/UseCaseFlow.png)
+
 Das folgende Diagramm zeigt den Ablauf der Anwendung pro Screen
 vom ersten Aufruf bis zum Logout.
 
