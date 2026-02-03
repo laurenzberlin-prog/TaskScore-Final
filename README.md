@@ -1,83 +1,85 @@
-# TaskScore – Finalabgabe
+# TaskScore-Final
 
 ## Projektbeschreibung
-TaskScore ist eine webbasierte Task-Management-Anwendung zur Wochenplanung.  
-Nutzer können Aufgaben auf Wochentage verteilen und nutzen hierfür ein Punktesystem, um sich eingenständig Prioriäten zu setzen und den Zeitaufwand der Tasks einzuschätzen. Fortschritte der geplanten Aufgaben sind dauerhaft visuell dargestellt.
+**TaskScore** ist eine webbasierte Task-Management-Anwendung zur Wochenplanung.  
+Nutzer können Aufgaben auf einzelne Wochentage verteilen und hierfür ein Punktesystem nutzen, um Prioritäten zu setzen und den zeitlichen Aufwand der Tasks besser einzuschätzen.  
+Der Fortschritt der geplanten Aufgaben wird dauerhaft visuell dargestellt.
 
 Ziel des Projekts ist die Entwicklung einer einfachen, nachvollziehbaren Anwendung zur Selbstorganisation.
 
+---
+
 ## Team
-- Laurenz Brödemann – Matrikelnummer: 77211922572  
-- Elhasan Kandil – Matrikelnummer: 77211982350  
+- **Laurenz Brödemann** – Matrikelnummer: 77211922572  
+- **Elhasan Kandil** – Matrikelnummer: 77211982350  
+
+---
 
 ## Abgabeinhalte
 Dieses Repository enthält:
-- Quellcode der Anwendung
-- Ausführliche Projektdokumentation
-- Value Proposition
-- Anleitung zum Ausführen der Anwendung
+- den vollständigen Quellcode der Anwendung  
+- eine ausführliche Projektdokumentation (GitHub Pages)   
+- Anleitung zur lokalen Ausführung der Anwendung  
 - Präsentationsfolien (PDF)  
-- Quellenverzeichnis   
+- Quellenverzeichnis  
 
-## Veröffentlichtes Projekt
-Website / Demo:
-Lokaler Start der Anwendung über:
-http://127.0.0.1:5000/
-(Die Anwendung ist eine lokale Flask-Webapp und wird nach Installation (siehe unten) der Abhängigkeiten lokal ausgeführt.)
+---
+
+## Veröffentlichtes Projekt / Dokumentation
+Die vollständige Projektdokumentation ist über **GitHub Pages** erreichbar:
+
+👉 **https://laurenzberlin-prog.github.io/TaskScore-Final/**
+
+---
 
 ## Lokale Installation und Start der Anwendung
-Diese Anleitung beschreibt Schritt für Schritt, wie die Anwendung auf einem Rechner installiert und gestartet werden kann.
+Diese Anleitung beschreibt Schritt für Schritt, wie die Anwendung lokal ausgeführt werden kann.
 
-1. Benötigte Software installieren
-1.1 Git installieren
+### 1. Benötigte Software installieren
 
-Git wird benötigt, um das Repository zu klonen.
+#### 1.1 Git
+Git wird benötigt, um das Repository zu klonen.  
 Download: https://git-scm.com/downloads
 
-1.2 Python installieren
-
-Die Anwendung benötigt Python 3.
+#### 1.2 Python
+Die Anwendung benötigt **Python 3**.  
 Download: https://www.python.org/downloads/
 
-(Optional, empfohlen auf macOS) Homebrew
+(Optional, empfohlen unter macOS) **Homebrew**  
 Homebrew ist ein Paketmanager für macOS.
-Installieren(in der Konsole):
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-dann: 
-  brew install python
 
-1.3 VS Code (empfohlen)
-
-Als Code-Editor wird Visual Studio Code empfohlen.
+Installation (Terminal):
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install python
+```
+#### 1.3 Visual Studio Code
 Download: https://code.visualstudio.com/
 
-2. Repository klonen ab hier im VSCode Terminal
-  git clone https://github.com/laurenzberlin-prog/Taskscore-FinalAbgabe.git
-  cd Taskscore-FinalAbgabe
+#### 2. Repository klonen (im VS Code Terminal)
+git clone https://github.com/laurenzberlin-prog/TaskScore-Final.git
+cd TaskScore-Final
 
-3. Virtuelle Umgebung erstellen
-Eine virtuelle Umgebung isoliert die Python-Abhängigkeiten.
-macOS/Linux:
-  python3 -m venv venv
-  source venv/bin/activate
-Windows:
-  python -m venv venv
-  .\venv\Scripts\Activate.ps1
-Nach Aktivierung steht im Terminal (venv).
+#### 3. Virtuelle Umgebung erstellen
 
-4. Abhängigkeiten installieren
-   pip install -r requirements.txt
+Auf macOS/Linus:
+python3 -m venv venv
+source venv/bin/activate
 
-5. Anwendung starten
-   python3 app.py
+Auf Windows:
+
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+
+
+#### 4. Abhängigkeiten installieren
+pip install -r requirements.txt
+
+#### 5. Anwendung starten
+python3 app.py
+
 Im Terminal erscheint:
-  Running on http://127.0.0.1:5000
+Running on http://127.0.0.1:5000
 
-6. Anwendung im Browser öffnen
-     http://127.0.0.1:5000
-
---
-
-## Rechtliche Erklärung
-Die eidesstattliche Erklärung aller Teammitglieder befindet sich unter:  
-`docs/declaration.md`
+#### 6. Anwendung im Browser öffnen
+http://127.0.0.1:5000
